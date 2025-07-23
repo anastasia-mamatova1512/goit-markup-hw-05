@@ -488,8 +488,103 @@
             </li>
           </ul>
         </div>
+        <div class="footer-send">
+          <p class="footer-send-text">Subscribe</p>
+          <form class="footer-send-wrapper">
+            <label class="footer-send-label" for="footer-input">E-mail</label>
+            <input
+              id="footer-input"
+              class="footer-send-input"
+              type="text"
+              name="Email"
+            />
+            <button class="footer-send-btn" type="submit">
+              Subscribe
+              <svg class="footer-send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn" type="button">
+          <svg class="modal-btn-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-slogan">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="modal-form" name="form-contacts">
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="user-name">Name</label>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="modal-form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="user-phone">Phone</label>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="modal-form-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="user-email">Email</label>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="modal-form-icon" width="16" height="12">
+                <use href="/images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-wrapper">
+            <label class="modal-form-label" for="message">Comment</label>
+            <textarea
+              class="modal-form-message"
+              name="message"
+              id="message"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="checkbox">Email</label>
+            <input type="checkbox" id="checkbox" name="checkbox" />
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
     <!-- #endregion -->
   </body>
 </html>
