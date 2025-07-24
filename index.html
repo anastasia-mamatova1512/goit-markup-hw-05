@@ -579,7 +579,27 @@
           </div>
 
           <div class="modal-form-agreement-wrapper">
-            <label class="modal-form-agreement" for="user-privacy">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="modal-form-agreement" for="user-privacy"
+              >I accept the terms and conditions of the<a
+                class="modal-form-agreement-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              ><span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg> </span
+            ></label>
+
+            <!-- <label class="modal-form-agreement" for="user-privacy">
               <input
                 class="checkbox"
                 type="checkbox"
@@ -600,7 +620,7 @@
                 rel="noopener noreferrer"
                 >Privacy Policy</a
               >
-            </label>
+            </label> -->
           </div>
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
