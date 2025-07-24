@@ -525,7 +525,7 @@ background-color: #31D0AA;
 .footer-send-wrapper {
     display: flex;
     gap: 24px;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .footer-send-label {
@@ -534,7 +534,6 @@ background-color: #31D0AA;
     line-height: 200%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    padding: 8px;
 }
 
 .footer-send-input {
@@ -543,7 +542,6 @@ background-color: #31D0AA;
     width: 264px;
     height: 40px;
     background-color: transparent;
-    margin-right: 24px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
@@ -592,6 +590,10 @@ background-color: #31D0AA;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.is-open{
+    display: none;
+}
+
 .modal {
     position: absolute;
     top: 50%;
@@ -625,7 +627,7 @@ background-color: #31D0AA;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ?одночасна зміна філл при ховері? */
+
 
 .modal-btn:hover,
 .modal-btn:focus{
@@ -638,8 +640,8 @@ background-color: #31D0AA;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover,
-.modal-btn-icon:focus{
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon:focus{
     fill: #FFFFFF;
 }
 
@@ -754,12 +756,12 @@ margin-bottom: 24px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
+    margin-right: 8px;
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgb(46 47 66 / 40%);
-    
+    cursor: pointer;
 }
 
 .checkbox:checked + .modal-form-checkbox{
@@ -769,21 +771,33 @@ border-color: transparent;
 
 .modal-form-checkbox-icon {}
 
-.modal-form-agreement-link {}
+.modal-form-agreement-link {
+    line-height: 133%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4D5AE5;
+}
 
 .modal-form-btn{
     display: block;
+    border-radius: 4px;
+    padding: 16px 32px;
     min-width: 169px;
     height: 56px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    cursor: pointer;
-    background-color: #4D5AE5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4D5AE5;
     border: none;
+    margin: 0 auto;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 /* #endregion */
