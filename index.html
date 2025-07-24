@@ -578,22 +578,23 @@
             ></textarea>
           </div>
 
-          <div class="modal-checkbox-wrapper visually-hidden">
-            <input
-              class="modal-checkbox-input"
-              type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
-              value="true"
-            />
-            <label class="modal-checkbox-label" for="user-privacy"
-              ><p>I accept the terms and conditions of the</p>
-              <span class="modal-checkbox-label-link"
-                ><svg class="modal-checkbox-icon" width="10" height="8">
-                  <use
-                    href="./images/icons.svg#icon-checkbox"
-                  ></use></svg></span
-            ></label>
+          <div>
+            <label class="modal-form-agreement" for="">
+              <input class="checkbox" type="checkbox" />
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-agreement-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              >
+            </label>
           </div>
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
