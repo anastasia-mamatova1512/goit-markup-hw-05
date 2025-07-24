@@ -496,7 +496,7 @@
                 id="footer-input"
                 class="footer-send-input"
                 type="email"
-                name="E-mail"
+                name="e-mail"
                 placeholder="E-mail"
               />
             </label>
@@ -514,7 +514,7 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button">
-          <svg class="modal-btn-icon" width="8px" height="8px">
+          <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -532,7 +532,7 @@
                 id="user-name"
                 name="user-name"
               />
-              <svg class="modal-form-icon" width="12" height="12">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
@@ -547,7 +547,7 @@
                 id="user-phone"
                 name="user-phone"
               />
-              <svg class="modal-form-icon" width="13" height="13">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -562,27 +562,40 @@
                 id="user-email"
                 name="user-email"
               />
-              <svg class="modal-form-icon" width="16" height="12">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modal-form-wrapper">
-            <label class="modal-form-label" for="message">Comment</label>
+          <div class="modal-form-message-wrapper">
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-message"
-              name="message"
-              id="message"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
 
-          <div>
-            <label for="checkbox">Email</label>
-            <input type="checkbox" id="checkbox" name="checkbox" />
+          <div class="modal-checkbox-wrapper visually-hidden">
+            <input
+              class="modal-checkbox-input"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="modal-checkbox-label" for="user-privacy"
+              ><p>I accept the terms and conditions of the</p>
+              <span class="modal-checkbox-label-link"
+                ><svg class="modal-checkbox-icon" width="10" height="8">
+                  <use
+                    href="./images/icons.svg#icon-checkbox"
+                  ></use></svg></span
+            ></label>
           </div>
-          <button type="submit">Send</button>
+          <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
