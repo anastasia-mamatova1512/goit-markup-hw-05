@@ -635,7 +635,6 @@ background-color: #31D0AA;
     border: none;
 }
 
-
 .modal-btn-icon {
     fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -765,7 +764,7 @@ margin-bottom: 24px;
     cursor: pointer;
 }
 
-.checkbox:checked + .modal-form-checkbox{
+.checkbox:checked + .modal-form-agreement .modal-form-checkbox{
 background-color: #404BBF;
 border-color: transparent;
 }
