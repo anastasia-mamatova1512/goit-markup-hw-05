@@ -510,7 +510,6 @@ background-color: #31D0AA;
 }
 
 .footer-send {
-    outline: solid red;
     margin-left: 80px;
 }
 
@@ -524,7 +523,8 @@ background-color: #31D0AA;
 }
 
 .footer-send-wrapper {
-    display: inline-flex;
+    display: flex;
+    gap: 24px;
     align-items: flex-start;
 }
 
@@ -542,23 +542,42 @@ background-color: #31D0AA;
     border-radius: 4px;
     width: 264px;
     height: 40px;
-    background-color: inherit;
+    background-color: transparent;
     margin-right: 24px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+}
+
+.footer-send-input::placeholder{
+    color: #FFFFFF;
 }
 
 .footer-send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     border-radius: 4px;
+    border: none;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4D5AE5;
-    border-color: transparent;
     cursor: pointer;
     color: #FFFFFF;
     text-align: center;
 }
 
-.footer-send-icon {}
+.footer-send-icon {
+    margin-left: 16px;
+}
 
 /* #endregion */
 
